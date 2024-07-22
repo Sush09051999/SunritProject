@@ -1,0 +1,419 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --browncolor :#b50000;
+    --yellowcolor:#f7b300;
+}
+.n-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+nav{
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--browncolor);
+}
+.burger, .mobile-view{
+    display: none;
+}
+
+.n-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+}
+.n-title p{
+    font-size: 1.1rem;
+    font-style: italic;
+}
+.n-title h3{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+}
+.n-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.n-right li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+.n-right li:hover{
+    transform: scale(1.2);
+
+}
+li.active {
+    color: var(--browncolor);
+    transform: scale(1.2);
+}
+li.active a{
+    color: var(--browncolor);
+}
+.n-right a{
+    text-decoration: none;
+    color: black;
+}
+.n-right a:hover{
+    color: var(--browncolor);
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    top: 30px;
+    width: 150px;   
+    padding-top: 12px; 
+    background-color: rgb(248, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+.n-button{
+    background-color: var(--browncolor);
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+.n-button:hover{
+    transform: scale(1.1);
+}
+.n-button a{
+    color: white;
+    text-decoration: none;
+}
+.n-button a:hover{
+    color: white;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.f-row{
+    padding: 0px 100px;
+    padding-top: 30px;
+    margin: 0px auto;
+    display: flex;
+    width: 90%;
+    gap: 120px;
+}
+.f-row h6{
+    font-size: 1.5rem;
+    margin-bottom:25px;
+}
+.f-col{
+    display: flex;
+    gap: 250px;
+    width: 600px;
+}
+.f-col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-bottom{
+    padding-left:280px;
+    padding-bottom: 10px;
+}
+.f-bottom a{
+    text-decoration: none;
+    color: white;
+}
+.f-icons {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 15px;
+    justify-content: right;
+    margin-right: 100px;
+}
+.f-icons i:hover{
+    transform: scale(1.2);
+}
+.hero{
+    height: 135vh;
+    background-color: #fff4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h-dtails{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 100px;
+}
+.h-dtails h5{
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+}
+.h-dtails h1{
+    font-size: 60px;
+   width: 900px;
+   text-align: center;
+   font-family: "Playfair Display", serif;
+}
+.h-dtails p{
+    width: 550px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+}
+.h-dtails button{
+    font-size: 1.1rem;
+    padding: 20px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background-color: #b50000;
+    color: white;
+}
+.h-dtails button a{
+    color: white;
+}
+.h-image{
+    margin-top: 80px;
+    
+}
+.details-h{
+    margin: 100px auto;
+    font-family: "Playfair Display", serif;
+    width: 60%;
+    
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.abb{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.schedule{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.schedule .sc{
+    display: flex;
+    gap: 50px;
+}
+.tickets{
+    transform: translateY(-40px);
+    font-family: "Playfair Display", serif;
+    width: 60%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ttyy{
+    width: 50%;
+    display: flex;
+    margin-right: 30px;
+}
+.ttyy:after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 95%;
+    background-color: gray;
+}
+.ty{
+    width: 100%;
+}
+
+.ty h5{
+    font-size: 14px;
+}
+.ty h3{
+    font-size: 20px;
+}
+.ty li{
+    list-style: none;
+    font-size: 14px;
+}
+.ty li a{
+    color: black;
+}
+.ty2{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tty{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 25px 0px;
+    height: 140px;
+    display: flex;
+    width: 100%;
+}
+.ch{
+    align-self: flex-end;
+    width: 35%;
+}
+.ch h3{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ch button{
+    width: 100%;
+    height: 50px;
+}
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .mobile-view{
+        display: none;
+        position: fixed;
+        height: 100vh;
+        left: 0px;
+        top: 0vh;
+        width: 100%;
+        border: 1px solid red;
+        background-color: white;
+        z-index: 1000;
+
+    }
+    .mobile-view li a{
+        text-decoration: none;
+        color: black;
+    }
+    .mobile-view .n-button{
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+    .mobile-view h1{
+        display: flex;
+        justify-content: right;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    .mobile-view li{
+        font-size: 1.2rem;
+        list-style: none;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .show{
+        display: block;
+
+    }
+    .burger{
+        display: block;
+    }
+    .n-right{
+        display: none;
+    }
+    nav{
+        align-items: center;
+    }
+    .n-title h3{
+        font-size: 1.2rem;
+    }
+    .n-title p{
+        font-size: 0.9rem;
+    }
+    section{
+        width: 100%;
+        z-index: -10;
+    }
+    footer{
+        width: 100%;
+    }
+    .f-row{
+        flex-direction: column;
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px;
+        border: 1px solid black;
+    }
+    .f-col{
+        gap: 50px;
+        margin-top:-100px;
+    }
+    .f-bottom{
+        padding-left: 10px;
+    }
+    .f-icons{
+        margin-left: -28px;
+    }
+    #list{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .drop{
+        display: flex;
+        align-items: center;
+        gap: 160px;
+    }
+    .hero{
+        width: 100%; 
+        height: 80vh;
+    }
+    .h-dtails{
+        width: 95%;
+    }
+    .h-dtails h1{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .h-dtails p{
+        width: 90%;
+    }
+    .h-image{
+        width: 80%;
+    }
+    .h-image img{
+        width: 100%;
+    }
+    .details-h{
+        width: 80%;
+    }
+    .tickets{
+        width: 85%;
+    }
+    .tty{
+        height: 150px;
+    }
+    .ch{
+        width: 55%;
+    }
+    
+  
+}
